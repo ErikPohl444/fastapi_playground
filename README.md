@@ -1,6 +1,6 @@
-# [Application name] 
+# FastApi Playground 
 
-Provide a description of application
+This repo is a place for me to try out FastApi, starting out with a very basic stub program and working towards a more advanced use-case.
 
 ## Future plans
 
