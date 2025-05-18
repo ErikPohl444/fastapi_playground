@@ -84,18 +84,49 @@ Repo checklist:
 
 If any disclaimer exists, add it here.
 
+---
+
 ## Getting Started
 
-Provide non-setup instructions for getting started using the work in the repo.
+1. **Run the FastAPI app:**
+   ```bash
+   uvicorn src.kickstart:app --reload
+   ```
+   - By default, the app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
+2. **Access the automatic API docs:**
+   - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+3. **Try the example endpoints:**
+   - `GET /` returns: `{"Hello": "World"}`
+   - `GET /hipstercount/` fetches and returns hipster-centric sentences from hipsum.co.
+
+---
 
 ## Prerequisites
 
-This section has overlap with minimum system requirements, requirements.txt, and technologies.
-I consider this anything which needs to be on your machine or available to you before installing and using the work in the repo.
+- Python 3.8 or newer (see `pyproject.toml`).
+- Internet connection (the app fetches data from http://hipsum.co).
+- (Recommended) Virtual environment tool such as `venv` or `virtualenv`.
+- `pip` for installing dependencies.
+
+---
 
 ## Installing
 
-Provide installation steps here.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ErikPohl444/fastapi_playground.git
+   cd fastapi_playground
+   ```
+2. **(Optional but recommended) Create and activate a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Running the tests
 
